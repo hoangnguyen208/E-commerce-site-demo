@@ -1,0 +1,27 @@
+<div class = "content">
+
+  <!-- Search and order -->
+  <input type = "text" ng-model = "search" placeholder="Search for a product" style = "width: 100%;"/>
+  <button class = "btn btn-info" ng-click = "order = 'price'">Order by price</button>
+  <button class = "btn btn-info" ng-click = "order = 'name'">Order by name</button>
+
+  <ul id = "item-list">
+    <!-- Iterate items from the list items -->
+    <li ng-repeat = "item in items | orderBy: order | filter: search" >
+
+      <img ng-src = "{{item.thumb}}" style = "margin-right: 10px; float: left; width: 50px;"/>
+      <h3>{{item.name}} - {{item.price | currency: "€"}}</h3>
+      <!-- Buttons functions -->
+      <div class = "text-right">
+        <button class = "btn btn-success" ng-click="addToCart(item)" ng-show="item.showAddToCart && !item.addedToCart" style = "margin-right: 10px">Add to Cart</button>
+        <button class = "btn btn-primary" ng-click="decreaseItem(item)" style = "margin-left: 10px;">-</button>
+        <button class = "btn btn-primary" ng-click="increaseItem(item)" style = "margin-right: 5px;">+</button>
+        {{item.quantity}}
+      </div>
+
+    </li>
+  </ul>
+  <div class = "text-right">
+    <a href = "#!/cart"><button class = "btn btn-warning"><i class="glyphicon glyphicon-shopping-cart"></i> {{numberOfItem()}}</button></a>
+  </div>
+</div>

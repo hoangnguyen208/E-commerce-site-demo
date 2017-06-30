@@ -1,0 +1,7 @@
+[
+  {"name":"Table Lamp","price":50,"quantity":0,"showAddToCart":false,"addedToCart":false,"available":true,"thumb":"images/Table-Lamp.jpg"},
+  {"name":"Fitness Tracker","price":20,"quantity":0,"showAddToCart":false,"addedToCart":false,"available":true,"thumb":"images/Fitness-Tracker.jpg"},
+  {"name":"Steam Iron","price":130,"quantity":0,"showAddToCart":false,"addedToCart":false,"available":true,"thumb":"images/Steam-Iron.jpg"},
+  {"name":"Oil Diffuser","price":9,"quantity":0,"showAddToCart":false,"addedToCart":false,"available":true,"thumb":"images/Oil-Diffuser.jpg"},
+  {"name":"Sport Watch","price":15,"quantity":0,"showAddToCart":false,"addedToCart":false,"available":true,"thumb":"images/Sport-Watch.jpg"}
+]

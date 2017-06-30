@@ -1,0 +1,148 @@
+
+body{
+  font-family: Helvetica;
+}
+
+#menu-bar{
+  background: crimson;
+  color: #fff;
+  padding: 10px;
+}
+
+#menu-bar h1{
+  font-size: 24px;
+  font-weight: bold;
+  display: inline-block;
+  margin: 15px;
+}
+
+#menu-bar ul{
+  float: right;
+  list-style-type: none;
+  margin: 15px;
+}
+
+#menu-bar li{
+  float: right;
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#menu-bar a{
+  color: #fff
+}
+
+#menu-bar a:link {
+    text-decoration: none;
+}
+
+
+main{
+  background: #eee;
+  width: 80%;
+  margin: 30px auto;
+  border-radius: 10px;
+}
+
+.content{
+  padding: 20px;
+  overflow: hidden;
+}
+
+.content textarea{
+  width: 100%;
+  padding: 10px 5%;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+  margin: 10px 0;
+}﻿
+
+.content button,
+.content input[type="submit"]{
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #777;
+  border: 0;
+  box-shadow: 2px 2px 2px rgba(20,20,20,0.1);
+  font-size: 16px;
+}
+
+.content button:nth-child(2){
+  float: right;
+}
+
+.content ul{
+  padding: 0;
+  list-style-type: none;
+  margin: 30px 0;
+}
+
+.content li{
+  padding: 15px 0;
+  border-top: 1px solid #e2e2e2;
+  color: #444;
+  font-weight: bold;
+}
+
+.content li span{
+  float: right;
+}
+
+.content li h3{
+  display: inline-block;
+  font-weight: normal;
+  font-size: 22px;
+  text-align: center;
+}
+
+.content input{
+  width: 100%;
+  padding: 10px 5%;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+  margin: 10px 0;
+}
+
+.content input[type="submit"]:last-child{
+  width: 150px;
+  display: block;
+  margin: 15px auto;
+}
+
+/* ANIMATION */
+main.ng-enter {
+  transition:0.5s linear all;
+  opacity:0;
+}
+
+main.ng-enter.ng-enter-active {
+  opacity:1;
+}
+
+#item-list li.ng-leave{
+  transition: 0.2s linear all;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+#item-list li.ng-leave.ng-leave-active{
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+#item-list li.ng-leave-stagger{
+  transition-delay: 0.2s;
+  transition-duration: 0;
+}
+
+input.ng-invalid.ng-touched, textarea.ng-invalid.ng-touched{
+  border: 2px solid red;
+}
+
+input[disabled = "disabled"]{
+  opacity: 0.4;
+  cursor: not-allowed !important;
+}
